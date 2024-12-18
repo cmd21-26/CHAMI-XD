@@ -22,13 +22,13 @@ const prefix = '.'
 const ownerNumber = ['94742952930']
 
 //===================SESSION-AUTH============================
-if (!fs.existsSync(__dirname + '/CHAMI_MD/creds.json')) {
+if (!fs.existsSync(__dirname + '/CHAMI_XD/creds.json')) {
 if(!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
 const sessdata = config.SESSION_ID
 const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
 filer.download((err, data) => {
 if(err) throw err
-fs.writeFile(__dirname + '/CHAMI_MD/creds.json', data, () => {
+fs.writeFile(__dirname + '/CHAMI_XD/creds.json', data, () => {
 console.log("Session downloaded ✅")
 })})}
 
@@ -69,9 +69,9 @@ require("./plugins/" + plugin);
 console.log('Plugins installed successful ✅')
 console.log('Bot connected to whatsapp ✅')
 
-let up = `🚀 *_CHAMI_MD Connected Successfully!_* ✅ 
+let up = `🚀 *_CHAMI_XD Connected Successfully!_* ✅ 
 
---- *🧚‍♀️🎉 _Welcome to CHAMI-MD!_* 🎉🧚‍♀️ 
+--- *🧚‍♀️🎉 _Welcome to CHAMI-XD!_* 🎉🧚‍♀️ 
 
 *🧚‍♀️🔹 PREFIX:* < ${prefix} >🪄⚡
 
@@ -87,7 +87,7 @@ _If you need any help or have questions, don't hesitate to ask._ 🌝💗
 
 _*🧚‍♀️Enjoy your time with us!😊*_
 
-> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : 𝐂𝐇𝐀𝐌𝐈 𝐌𝐃 2024💗*`;
+> *⚖️𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐁𝐲 - : 𝐂𝐇𝐀𝐌𝐈 2024💗*`;
 
 conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/xfXj5pv/Manul-Ofc-X.jpg` }, caption: up })
 
