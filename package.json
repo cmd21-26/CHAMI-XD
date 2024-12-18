@@ -1,12 +1,12 @@
 {
-  "name": "CHAMI-MD",
-  "version": "1.0.0",
+  "name": "CHAMI-XD",
+  "version": "7.0.0",
   "description": "A WhatsApp bot created using Node.js",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --deep-monitoring --attach --name CHAMI-MD",
-    "stop": "pm2 stop CHAMI-MD",
-    "restart": "pm2 restart CHAMI-MD"
+    "start": "pm2 start index.js --deep-monitoring --attach --name CHAMI-XD",
+    "stop": "pm2 stop CHAMI-XD",
+    "restart": "pm2 restart CHAMI-XD"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "6.7.9",
@@ -68,4 +68,4 @@
      "adm-zip": "^0.5.16" 
 
   }
-  }
+}
